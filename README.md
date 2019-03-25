@@ -7,13 +7,14 @@ dan menampilkan seluruh gambar yang tersimpan di server.
 - ExpressJS
 - Formidable
 
-Please use the following commands:
-Install formidable
+Please use the following commands
+
+### Install formidable
 ```
 npm i formidable
 ```
 
-Install ExpressJS
+### Install ExpressJS
 ```
 npm i express
 ```
