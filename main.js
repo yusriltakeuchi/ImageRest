@@ -56,10 +56,8 @@ app.post('/images', function(req, res) {
     getLastFileName(function(err, lastFile) {
         var filenames = __dirname + "/images/";
         if (err){
-            fullname = file.name.split(".");
             filenames = filenames 
-                + fullname[0].replace(fullname[0], "image-1") 
-                + "." + fullname[1];
+                + "image-1.png";
         } else {
             filenames = filenames 
             + lastFile[0].replace(lastFile[0], "image-" 
