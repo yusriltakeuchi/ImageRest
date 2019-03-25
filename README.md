@@ -8,5 +8,12 @@ dan menampilkan seluruh gambar yang tersimpan di server.
 - Formidable
 
 Please use the following commands:
-```npm i formidable```
-```npm i express```
+Install formidable
+```
+npm i formidable
+```
+
+Install ExpressJS
+```
+npm i express
+```
