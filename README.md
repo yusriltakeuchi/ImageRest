@@ -7,8 +7,6 @@ dan menampilkan seluruh gambar yang tersimpan di server.
 - ExpressJS
 - Formidable
 
-Please use the following commands
-
 ### Install formidable
 ```
 npm i formidable
@@ -18,3 +16,9 @@ npm i formidable
 ```
 npm i express
 ```
+
+### RestRoute
+| Method  | URL | Description   |
+| ------------- | ------------- | ------------- |
+| GET  | localhost:3000/images  | Show All Images |
+| POST  | localhost:3000/images  | Store Images to Server |
