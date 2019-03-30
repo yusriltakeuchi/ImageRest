@@ -26,6 +26,33 @@ app.get('/images', function(req, res){
     });
 })
 
+app.get('/images/:name', function(req, res) {
+    var searchFile = req.params.name;
+    getAllFile(function(err, images) {
+        if (err){
+            res.json({
+                'status':'ERROR',
+                'messages':err
+            });
+        }
+        var data = [];
+        for(var i=0; i<images.length; i++){
+            if (images[i].includes(searchFile)){
+                data.push({
+                    'id':i+1,
+                    'name':images[i]
+                });
+            }
+          
+        }
+        res.json({
+            "status":"OK",
+            "code":200,
+            "data":data
+        });
+    });
+})
+
 function getAllFile(callback){
     var dir = __dirname + "/images";
     fs.readdir(dir, function(err, files){
